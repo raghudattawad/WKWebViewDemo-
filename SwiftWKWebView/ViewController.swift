@@ -7,14 +7,46 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController ,WKNavigationDelegate{
+//var webView:WKWebView!
+    
+    
+    @IBOutlet weak var wkNewWebView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+        let url = "https://www.apple.com"
+       // self.wkNewWebView.load(URLRequest(url: url))
+        let request = URLRequest(url:URL(string: url)!)
+        self.wkNewWebView.load(request)
+        
+        
+    
     }
 
+    
+    /// load programtlaly call this method   ///
+     //override func loadView() {
+//       // wkNewWebView = WKWebView()
+//       self.wkNewWebView?.navigationDelegate = self
+//        view = self.wkNewWebView
+//    }
 
+    func callMethodProgramatically(){
+        
+        
+        ///use programatically load //
+        
+//        webView = WKWebView()
+//        webView.navigationDelegate = self
+//        view = webView
+    }
+        
+
+    
 }
 

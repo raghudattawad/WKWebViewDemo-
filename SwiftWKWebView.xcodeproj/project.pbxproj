@@ -14,6 +14,7 @@
 		E8BA50EC22A6DB2F003EAF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BA50EA22A6DB2F003EAF9F /* LaunchScreen.storyboard */; };
 		E8BA50F722A6DB2F003EAF9F /* SwiftWKWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BA50F622A6DB2F003EAF9F /* SwiftWKWebViewTests.swift */; };
 		E8BA510222A6DB2F003EAF9F /* SwiftWKWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BA510122A6DB2F003EAF9F /* SwiftWKWebViewUITests.swift */; };
+		E8BA511122A6E293003EAF9F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BA511022A6E293003EAF9F /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E8BA50FD22A6DB2F003EAF9F /* SwiftWKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BA510122A6DB2F003EAF9F /* SwiftWKWebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWKWebViewUITests.swift; sourceTree = "<group>"; };
 		E8BA510322A6DB2F003EAF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BA511022A6E293003EAF9F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BA511122A6E293003EAF9F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				E8BA50F522A6DB2F003EAF9F /* SwiftWKWebViewTests */,
 				E8BA510022A6DB2F003EAF9F /* SwiftWKWebViewUITests */,
 				E8BA50DF22A6DB2E003EAF9F /* Products */,
+				E8BA510F22A6E292003EAF9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				E8BA510322A6DB2F003EAF9F /* Info.plist */,
 			);
 			path = SwiftWKWebViewUITests;
+			sourceTree = "<group>";
+		};
+		E8BA510F22A6E292003EAF9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8BA511022A6E293003EAF9F /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
